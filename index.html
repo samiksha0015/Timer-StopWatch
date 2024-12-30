@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Timer & Stopwatch</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1> Timer & Stopwatch</h1>
+
+        <!-- Timer Section -->
+        <div class="section">
+            <h2>Timer</h2>
+            <div class="circle">
+                <span id="timer-display">00:00</span>
+            </div>
+            <input type="number" id="timer-input" placeholder="Set Minutes" min="1">
+            <button id="start-timer">Start</button>
+            <button id="pause-timer">Pause</button>
+            <button id="reset-timer">Reset</button>
+        </div>
+
+        <!-- Stopwatch Section -->
+        <div class="section">
+            <h2>Stopwatch</h2>
+            <div class="circle">
+                <span id="stopwatch-display">00:00:00</span>
+            </div>
+            <button id="start-stopwatch">start</button>
+            <button id="pause-stopwatch">Pause</button>
+            <button id="reset-stopwatch">Reset</button>
+            <ul id="laps"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
